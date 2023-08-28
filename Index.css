@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-color: #ffffff;
+  --Text-color: #1a1a1a;
+  --Button-color-primary: #ffb8b8;
+  --Button-color-Secondry: #5f27cd;
+  --Button-color-before: #bdc3c7;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#nav__logo img {
+  height: 5rem;
+  width: 12rem;
+  align-items: flex-end;
+}
+
+#nav__bar {
+  padding-right: 5rem;
+}
+
+#nav__bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav__bar a {
+  text-decoration: none;
+  color: var(--Button-color-before);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#nav__bar a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+#nav__bar a:hover {
+  color: var(--Text-color);
+}
+
+#nav__bar a:hover::after {
+  width: 100%;
+  background: var(--Text-color);
+}
+
+#Btn {
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--Button-color-primary);
+  padding: 1.5rem 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  padding-left: 2rem;
+  align-items: flex-end;
+  margin-left: 10rem;
+}
+
+#Btn a {
+  color: var(--Text-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#main {
+  margin: 0 10rem;
+}
+
+.motto h1 {
+    margin-top: 10rem;
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.motto p {
+  font-size: 1.5rem;
+}
+
+#Btnn {
+  width: 15rem;
+  height: 5rem;
+  background-color: var(--Button-color-Secondry);
+  padding: 1.5rem 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 16px;
+  padding-left: 2rem;
+  color: var(--background-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-items: flex-end;
+  margin: 2rem 0;
+}
+
+.profile {
+  margin-top: 5rem;
+}
+
+.bnr{
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: 0 2rem;
+    padding-top: 1rem;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+
+.color {
+    width: 3rem;
+    height: 1.5rem;
+}
+
+#pink{
+    border-radius: 20px;
+    background-color: #ffb8b8;
+}
+
+#red{
+    border-radius: 20px;
+    background-color: #e74c3c;
+}
+
+#green {
+    border-radius: 20px;
+    background-color: #2ecc71;
+}
+
+#yellow {
+    border-radius: 20px;
+    background-color: #f1c40f;
+}
+
+.bnr:hover{
+    background-color: var(--background-color);
+}
+
+.bnr a{
+    text-decoration: none;
+    color: var(--Text-color);
+}
+
+.bnr h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.date{
+    color: var(--Button-color-before);
+}
+
+.name {
+  width: 15rem;
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: var(--Button-color-Secondry);
+  border-color: var(--Button-color-Secondry);
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+@media (min-width: 998px) and (max-width: 1280px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  #row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav__logo {
+    width: 100%;
+  }
+
+  #nav__bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav__bar li {
+    margin: 2rem 0;
+  }
+
+  #Btn {
+    display: none;
+  }
+}
