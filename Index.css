@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 :root {
   --background-color: #ffffff;
-  --Text-color: #1a1a1a;
+  --Text-color: #000000;
   --Button-color-primary: #ffb8b8;
   --Button-color-Secondry: #5f27cd;
-  --Button-color-before: #bdc3c7;
+  --Button-color-before: #f5f6fa;
 }
 
 html {
@@ -25,31 +23,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#nav__logo img {
-  height: 5rem;
-  width: 12rem;
-  align-items: flex-end;
+.btn {
+  background-color: var(--Button-color-primary);
+  border-radius: 2rem;
 }
 
-#nav__bar {
-  padding-right: 5rem;
+.btn:hover {
+  background-color: var(--Button-color-Secondry);
+  color: var(--background-color);
 }
 
-#nav__bar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#nav__bar a {
-  text-decoration: none;
-  color: var(--Button-color-before);
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-#nav__bar a::after {
+#nav a::after {
   content: "";
   display: block;
   margin: auto;
@@ -60,203 +44,198 @@ body {
   transition: all 0.3s;
 }
 
-#nav__bar a:hover {
-  color: var(--Text-color);
-}
-
-#nav__bar a:hover::after {
+#nav a:hover::after {
   width: 100%;
-  background: var(--Text-color);
+  background: var(--Button-color-Secondry);
 }
 
-#Btn {
-  width: 15rem;
-  height: 5rem;
-  background-color: var(--Button-color-primary);
-  padding: 1.5rem 0;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 16px;
-  padding-left: 2rem;
-  align-items: flex-end;
-  margin-left: 10rem;
-}
-
-#Btn a {
-  color: var(--Text-color);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-#main {
-  margin: 0 10rem;
-}
-
-.motto h1 {
-    margin-top: 10rem;
-  font-size: 6rem;
+.moto h1 {
+  font-size: 8rem;
   font-weight: 800;
-  margin-bottom: 2rem;
 }
 
-.motto p {
-  font-size: 1.5rem;
+.moto p {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
-#Btnn {
-  width: 15rem;
-  height: 5rem;
+.moto span {
+  color: var(--Button-color-Secondry);
+}
+
+.icon i {
+  padding: 2rem;
+}
+
+.icon i {
+  border-radius: 35%;
+  color: var(--Text-color);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.icon i:hover {
+  color: var(--Button-color-before);
+}
+
+.btn_sec {
   background-color: var(--Button-color-Secondry);
-  padding: 1.5rem 0;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 16px;
-  padding-left: 2rem;
   color: var(--background-color);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-  align-items: flex-end;
-  margin: 2rem 0;
+  border-radius: 2rem;
 }
 
-.profile {
-  margin-top: 5rem;
+.btn_sec:hover {
+  background-color: var(--Button-color-primary);
+  color: var(--Text-color);
 }
 
-.bnr{
-    border-radius: 20px;
-    margin-bottom: 1rem;
-    height: 5rem;
-    padding: 0 2rem;
-    padding-top: 1rem;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
-    transition: box-shadow 0.1s, transform 0.1s;
+.banner {
+  background-color: var(--Button-color-before);
+}
+
+.banner:hover {
+  background-color: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.banner i {
+  background-color: var(--background-color);
+  color: #bdc3c7;
+  border-radius: 50%;
+  border: 2px solid #bdc3c7;
+}
+
+.banner i:hover {
+  background-color: var(--Button-color-Secondry);
+  color: var(--background-color);
+}
+
+.banner h3 {
+  width: 15rem;
+}
+
+.banner h2 {
+  background-color: #ffb8b8;
 }
 
 .color {
-    width: 3rem;
-    height: 1.5rem;
+  width: 3rem;
+  height: 1.5rem;
 }
 
-#pink{
-    border-radius: 20px;
-    background-color: #ffb8b8;
+#pink {
+  border-radius: 20px;
+  background-color: #ffb8b8;
 }
 
-#red{
-    border-radius: 20px;
-    background-color: #e74c3c;
+#red {
+  border-radius: 20px;
+  background-color: #e74c3c;
 }
 
 #green {
-    border-radius: 20px;
-    background-color: #2ecc71;
+  border-radius: 20px;
+  background-color: #2ecc71;
 }
 
 #yellow {
-    border-radius: 20px;
-    background-color: #f1c40f;
+  border-radius: 20px;
+  background-color: #f1c40f;
 }
 
-.bnr:hover{
-    background-color: var(--background-color);
-}
-
-.bnr a{
-    text-decoration: none;
-    color: var(--Text-color);
-}
-
-.bnr h1 {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.date{
-    color: var(--Button-color-before);
-}
-
-.name {
-  width: 15rem;
-}
-
-.round {
-  position: relative;
-}
-
-.round label {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 25px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 25px;
-}
-
-.round label:after {
-  border: 2px solid #fff;
-  border-top: none;
-  border-right: none;
-  content: "";
-  height: 6px;
-  left: 7px;
-  opacity: 0;
-  position: absolute;
-  top: 8px;
-  transform: rotate(-45deg);
-  width: 12px;
-}
-
-.round input[type="checkbox"] {
-  visibility: hidden;
-}
-
-.round input[type="checkbox"]:checked + label {
-  background-color: var(--Button-color-Secondry);
-  border-color: var(--Button-color-Secondry);
-}
-
-.round input[type="checkbox"]:checked + label:after {
-  opacity: 1;
+@media (min-width: 1280px) and (max-width: 1400px) {
+  html {
+    font-size: 55.5%;
+  }
 }
 
 @media (min-width: 998px) and (max-width: 1280px) {
   html {
-    font-size: 50%;
+    font-size: 45.5%;
+  }
+
+  #next__col img {
+    width: 90%;
+  }
+
+  .banner img {
+    width: 4rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 998px) {
   html {
-    font-size: 40%;
+    font-size: 35.5%;
+  }
+
+  #logo img {
+    width: 65%;
+  }
+
+  #next__col img {
+    width: 100%;
+    margin-left: 5rem;
+  }
+
+  .banner img {
+    width: 3rem;
   }
 }
 
-@media (max-width: 768px) {
-  #row {
-    display: flex;
-    flex-direction: column;
+@media (min-width: 480px) and (max-width: 768px) {
+  html {
+    font-size: 28.5%;
   }
 
-  #nav__logo {
+  #logo img {
+    width: 55%;
+  }
+
+  #next__col img {
+    width: 90%;
+    margin-left: 10rem;
+  }
+
+  .banner img {
+    width: 3rem;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+  html {
+    font-size: 35.5%;
+  }
+
+  #logo img {
+    width: 85%;
+  }
+
+  #next__col {
+    display: none;
+  }
+
+  #num {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #button_between {
+    padding: 0 10rem;
+  }
+
+  #about_hr_main {
     width: 100%;
   }
 
-  #nav__bar ul {
-    display: flex;
-    flex-direction: column;
+  .listbanner {
+    padding-top: 5rem;
   }
 
-  #nav__bar li {
-    margin: 2rem 0;
+  .banner {
+    margin: 0 5rem;
   }
 
-  #Btn {
-    display: none;
+  .banner img {
+    width: 2rem;
   }
 }
